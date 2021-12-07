@@ -8,7 +8,7 @@ import Services from "./Pages/Services";
 function App() {
   return (
     <>
-      <Header sitetitle="Welcome To Rv Technolabs" sitedesc="We Will Make Your Dreams Came True.." />
+      <Header title="RV Technolabs" sitetitle="Welcome To Rv Technolabs" sitedesc="We Will Make Your Dreams Came True.." />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact-us" element={<Contact heading="Ask Your Questions.." />} />

@@ -22,7 +22,7 @@ const Services = (props) => {
                   <>
                     <Grid item xs={6}>
                       <Card sx={{ minWidth: 80 }}>
-                        <Servicecard title={e.title} desc={e.desc} />
+                        <Servicecard key={e.id} title={e.title} desc={e.desc} />
                       </Card>
                     </Grid>
                   </>

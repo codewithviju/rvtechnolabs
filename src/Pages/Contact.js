@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import TextField from "@material-ui/core/TextField";
-import { Button, Container, Typography, Divider } from "@material-ui/core";
+import { Button, Container, Typography } from "@material-ui/core";
 
 export default class Contact extends Component {
   resetForm = () => {
@@ -17,38 +17,13 @@ export default class Contact extends Component {
     }, 3000);
   };
 
-  handleChangeEmail(e) {
-    if (
-      !e.target.value.match(
-        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-      )
-    ) {
-      this.setState({
-        email: e.target.value,
-      });
-      this.setState({ emailError: true });
-
-      if (this.state.email === "") {
-        // check if the input is empty
-        this.setState({ emailError: false });
-      }
-    } else {
-      this.setState({ email: e.target.value, emailError: false });
-    }
-  }
-
   formSubmit = async (e) => {
     e.preventDefault();
     this.setState({
       buttonText: "...sending",
     });
 
-    let data = {
-      name: this.state.name,
-      email: this.state.email,
-      message: this.state.message,
-      subject: this.state.subject,
-    };
+
 
 
   };
