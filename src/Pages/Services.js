@@ -12,7 +12,7 @@ const Services = (props) => {
           maxWidth="lg"
           style={{ textAlign: "center", alignItems: "center" }}
         >
-          <Typography variant="h3" style={{ color: "green" }}>
+          <Typography variant="h4">
             {props.heading}
           </Typography>
           <Box sx={{ flexGrow: 1 }} style={{ margin: "20px 20px" }}>

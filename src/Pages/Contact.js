@@ -50,7 +50,7 @@ export default class Contact extends Component {
           }}
         >
 
-          <Typography variant="h3" > {this.props.heading} </Typography> <br />
+          <Typography variant="h4" > {this.props.heading} </Typography> <br />
           <form className="contact-form" onSubmit={(e) => this.formSubmit(e)}>
             <TextField
               fullWidth

@@ -17,9 +17,9 @@ const Home = () => {
         maxWidth="lg"
         style={{ textAlign: "center", alignItems: "center" }}
       >
-        <Services />
+        <Services heading="We Will Make Your Dreams Came True" />
         <Divider />
-        <Contact />
+        <Contact heading="You Can Contact by Filling Below Form.." />
       </Container>
     </>
   );
