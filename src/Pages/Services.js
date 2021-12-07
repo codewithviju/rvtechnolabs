@@ -4,7 +4,7 @@ import Servicelist from "../APIs/Serviceslist";
 import Servicecard from "../Components/Servicecard";
 import Typography from "@mui/material/Typography";
 import { Box, Grid, Container } from "@mui/material";
-const Services = () => {
+const Services = (props) => {
   return (
     <>
       <div>
@@ -13,7 +13,7 @@ const Services = () => {
           style={{ textAlign: "center", alignItems: "center" }}
         >
           <Typography variant="h3" style={{ color: "green" }}>
-            We provide the best service
+            {props.heading}
           </Typography>
           <Box sx={{ flexGrow: 1 }} style={{ margin: "20px 20px" }}>
             <Grid container spacing={2} columns={18}>

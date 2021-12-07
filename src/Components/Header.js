@@ -9,7 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigate } from "react-router-dom";
 import { Divider } from "@material-ui/core";
 
-const Header = () => {
+const Header = (props) => {
   const navigate = useNavigate();
 
   return (
@@ -66,12 +66,12 @@ const Header = () => {
       </Box>
 
       <div style={{ padding: "50px" }}>
-        <Typography variant="h3" gutterBottom>
-          Welcome To RV Technolabs
+        <Typography variant="h3" gutterBottom align="center">
+          {props.sitetitle}
         </Typography>
 
-        <Typography variant="p" gutterBottom>
-          Here You Will Find Best IT Services
+        <Typography variant="h5" gutterBottom align="center">
+          {props.sitedesc}
         </Typography>
       </div>
       <Divider style={{ marginBottom: "20px" }} />

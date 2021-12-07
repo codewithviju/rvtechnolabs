@@ -74,12 +74,14 @@ export default class Contact extends Component {
             padding: "10px 10px",
           }}
         >
+
+          <Typography variant="h3" > {this.props.heading} </Typography> <br />
           <form className="contact-form" onSubmit={(e) => this.formSubmit(e)}>
             <TextField
               fullWidth
               id="standard-multiline-flexible"
-              label="Message"
-              placeholder="Enter Message"
+              label="Name"
+              placeholder="Enter Name"
               variant="outlined"
               multiline
               rowsMax={4}
@@ -94,13 +96,13 @@ export default class Contact extends Component {
             <TextField
               id="outlined-basic"
               fullWidth
-              placeholder="Enter your name"
-              label="Name"
+              placeholder="Enter your Email"
+              label="Email"
               variant="outlined"
               value={this.state.name}
               onChange={(e) => this.setState({ name: e.target.value })}
               required
-              type="text"
+              type="email"
             />
             <br />
             <br />
@@ -108,8 +110,8 @@ export default class Contact extends Component {
             <TextField
               fullWidth
               id="outlined-basic"
-              label="Email"
-              placeholder="Enter email address"
+              label="Mobile"
+              placeholder="Enter Mobile Number"
               variant="outlined"
               value={this.state.email}
               onChange={(e) => this.handleChangeEmail(e)}

@@ -2,7 +2,6 @@ import React from "react";
 import {
   Typography,
   Container,
-  Divider,
   Button,
   Card,
   CardMedia,
@@ -10,7 +9,7 @@ import {
   CardActions,
 } from "@mui/material";
 
-const About = () => {
+const About = (props) => {
   return (
     <>
       <Container
@@ -32,19 +31,14 @@ const About = () => {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Get to know us better.
+              {props.title}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              We truly care about our products. We are dedicated to providing
-              you with the best IT solutions of your requirements.
+              {props.shortdesc}
             </Typography>{" "}
             <br />
             <Typography>
-              Our simplistic process keeps you involved at every stage. We
-              brainstorm with you to understand your requirements and ensure
-              that they are met. Combined with your ideas and our creative
-              inputs we come out with the best design for your needs and
-              requirements.
+              {props.longdesc}
             </Typography>
           </CardContent>
           <CardActions style={{ alignItems: "center" }}>
